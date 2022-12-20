@@ -2,7 +2,7 @@
 // נגדיר אובייקט מסוג ראוטר
 const router = require('express').Router();
 //const ProductController  = require('../controllers/product');
-const {AddProducts,GetAllProducts,GetProductSById,UpdateProducts,DeleteProductById}  = require('../controllers/product');
+const {AddProducts,GetAllProducts,GetProductSById,UpdateProducts,DeleteProductById,AccessPorblem}  = require('../controllers/product');
 
 // הגדרנו ניתוב - נקודת קצה שביטת גט לנתיב של כל מוצר
 router.get("/",GetAllProducts);
@@ -18,6 +18,7 @@ router.post("/",AddProducts);
 
 // מחיקת מוצר לפי קוד מוצר
 router.delete("/:id",DeleteProductById);
+
 
 
 
